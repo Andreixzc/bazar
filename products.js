@@ -110,7 +110,7 @@ window.BAZAR = {
       summary: "Full HD · 120 Hz · base com ajuste de altura",
       category: "screens",
       status: "available",
-      price: 400,
+      price: 350,
       photos: 0,
       specs: [
         "Tela de 24\" Full HD (1920 × 1080), painel TN",
@@ -208,7 +208,7 @@ window.BAZAR = {
       summary: "Estilo Strato · captação HSS · sunburst",
       category: "instruments",
       status: "available",
-      price: 1200,
+      price: 950,
       photos: 5,
       specs: [
         "Corpo estilo Stratocaster, acabamento sunburst",
