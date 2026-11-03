@@ -143,7 +143,7 @@ window.BAZAR = {
       summary: "Fone aberto (open-back) · 150 Ω",
       category: "audio",
       status: "available",
-      price: 1100,
+      price: 900,
       photos: 5,
       specs: [
         "Over-ear aberto (open-back)",
