@@ -1,0 +1,235 @@
+/*
+ * Bazar de Mudança: everything the site shows comes from this file.
+ *
+ * To update the site, edit this file and push it, or edit it straight on GitHub
+ * (works from the phone): https://github.com/Andreixzc/bazar/edit/main/products.js
+ *
+ * Product fields
+ *   id             unique slug; also the direct link to the item (…/bazar/#id)
+ *   status         "available" | "reserved" | "sold"   (sold items go grey and move to the end)
+ *   price          asking price in R$, plain number
+ *   previousPrice  optional: when you lower a price, put the old one here; it shows struck through
+ *   newPrice       optional: what it costs new, shown as a reference
+ *   photos         how many photos are in img/<id>/, named 1.jpg, 2.jpg, … (1.jpg is the cover)
+ *   focus          optional: which part of the cover to keep when cropped (CSS object-position)
+ *   note           optional: one extra line (what comes with it, etc.)
+ */
+window.BAZAR = {
+  whatsapp: "5531988781887",
+  updated: "2026-11-03",
+
+  categories: {
+    computers: "Computadores",
+    screens: "TV e monitores",
+    audio: "Áudio",
+    instruments: "Instrumentos",
+    furniture: "Móveis",
+  },
+
+  products: [
+    {
+      id: "pc-gamer",
+      name: "PC Gamer completo",
+      summary: "i7-8700K · GTX 1080 · 32 GB RAM · SSD 1 TB",
+      category: "computers",
+      status: "available",
+      price: 4200,
+      photos: 4,
+      specs: [
+        "Processador Intel Core i7-8700K (6 núcleos / 12 threads, até 4,7 GHz)",
+        "Placa de vídeo Zotac GeForce GTX 1080 Mini, 8 GB GDDR5X",
+        "Placa-mãe Gigabyte Z370 HD3",
+        "32 GB de RAM DDR4 2400 MHz HyperX Fury (4 × 8 GB)",
+        "SSD de 1 TB",
+        "Water cooler Corsair",
+        "Fonte Gamemax 80 Plus",
+        "Gabinete preto com janela lateral",
+      ],
+      note: "Vendo completo. Peças separadas: consulte.",
+    },
+    {
+      id: "notebook-asus",
+      name: "Notebook ASUS VivoBook Pro 15",
+      summary: "i5-11300H · RTX 3050 · 16 GB RAM · SSD 512 GB",
+      category: "computers",
+      status: "available",
+      price: 3500,
+      photos: 6,
+      specs: [
+        "Processador Intel Core i5-11300H (4 núcleos / 8 threads, até 4,4 GHz)",
+        "Placa de vídeo NVIDIA GeForce RTX 3050, 4 GB",
+        "16 GB de RAM DDR4 3200 MHz",
+        "SSD NVMe de 512 GB",
+        "Tela de 15,6\" Full HD",
+        "Wi-Fi 6 e Bluetooth",
+        "Thunderbolt (USB-C), USB 3.2 e 2 × USB 2.0",
+        "Teclado ABNT2 · Windows 11",
+        "Modelo K3500PC",
+      ],
+    },
+    {
+      id: "tv-lg-oled-c4",
+      name: "TV LG OLED evo C4 48\"",
+      summary: "4K · OLED · 144 Hz · HDMI 2.1",
+      category: "screens",
+      status: "available",
+      price: 3600,
+      newPrice: 4839,
+      photos: 1,
+      focus: "50% 62%",
+      specs: [
+        "Tela de 48\" 4K UHD (3840 × 2160), OLED evo",
+        "Até 144 Hz, compatível com G-Sync e FreeSync Premium",
+        "4 entradas HDMI 2.1",
+        "Processador α9 AI Gen7",
+        "Dolby Vision e Dolby Atmos",
+        "Smart TV webOS",
+        "Modelo OLED48C4",
+      ],
+    },
+    {
+      id: "monitor-alienware",
+      name: "Monitor Dell Alienware 24,5\" 240 Hz",
+      summary: "Full HD · 240 Hz · 1 ms",
+      category: "screens",
+      status: "available",
+      price: 1700,
+      photos: 0,
+      specs: [
+        "Tela de 24,5\" Full HD (1920 × 1080)",
+        "Taxa de atualização de 240 Hz",
+        "Tempo de resposta de 1 ms",
+      ],
+    },
+    {
+      id: "monitor-benq",
+      name: "Monitor BenQ XL2420T 24\"",
+      summary: "Full HD · 120 Hz · base com ajuste de altura",
+      category: "screens",
+      status: "available",
+      price: 500,
+      photos: 0,
+      specs: [
+        "Tela de 24\" Full HD (1920 × 1080), painel TN",
+        "120 Hz, 2 ms (GtG)",
+        "Entradas DisplayPort, DVI-D, 2 × HDMI e VGA",
+        "Base com ajuste de altura",
+      ],
+      note: "Não acompanha o controle S-Switch.",
+    },
+    {
+      id: "focusrite-scarlett-solo",
+      name: "Focusrite Scarlett Solo (2ª geração)",
+      summary: "Interface de áudio USB · 1 microfone + 1 instrumento",
+      category: "audio",
+      status: "available",
+      price: 650,
+      photos: 4,
+      specs: [
+        "Entrada XLR para microfone, com phantom power 48 V",
+        "Entrada P10 para instrumento/linha (guitarra, violão, baixo)",
+        "Gravação em até 24 bits / 192 kHz",
+        "Saídas RCA para monitores + saída de fone P10",
+        "Monitoração direta (Direct Monitor)",
+        "Alimentação pela própria USB",
+      ],
+    },
+    {
+      id: "sennheiser-hd58x",
+      name: "Fone Sennheiser × Drop HD 58X Jubilee",
+      summary: "Fone aberto (open-back) · 150 Ω",
+      category: "audio",
+      status: "available",
+      price: 1100,
+      photos: 5,
+      specs: [
+        "Over-ear aberto (open-back)",
+        "Impedância de 150 Ω",
+        "Almofadas de veludo",
+        "Cabo removível",
+      ],
+      note: "Edição da Drop com a Sennheiser, não vendida oficialmente no Brasil.",
+    },
+    {
+      id: "soundcore-life-q30",
+      name: "Fone Soundcore Life Q30",
+      summary: "Bluetooth · cancelamento de ruído ativo",
+      category: "audio",
+      status: "available",
+      price: 350,
+      newPrice: 595,
+      photos: 4,
+      specs: [
+        "Over-ear Bluetooth 5.0",
+        "Cancelamento de ruído ativo híbrido, com modo ambiente",
+        "Até 40 h de bateria com cancelamento de ruído (60 h sem)",
+        "Hi-Res Audio e NFC",
+        "Entrada P2 para usar com cabo",
+      ],
+      note: "Acompanha estojo de transporte.",
+    },
+    {
+      id: "microlab-b77bt",
+      name: "Caixas de som Microlab B77BT",
+      summary: "Par de caixas bookshelf · Bluetooth",
+      category: "audio",
+      status: "available",
+      price: 450,
+      newPrice: 639,
+      photos: 3,
+      specs: [
+        "Par de caixas estéreo 2.0 (bookshelf)",
+        "Bluetooth e entrada RCA",
+        "Gabinete de madeira com duto de graves",
+        "Botão de volume na frente",
+      ],
+    },
+    {
+      id: "violao-vogga",
+      name: "Violão Vogga Solene VCS230",
+      summary: "Cordas de aço · cutaway",
+      category: "instruments",
+      status: "available",
+      price: 300,
+      photos: 4,
+      specs: [
+        "Cordas de aço",
+        "Corpo com cutaway",
+        "Acabamento natural",
+      ],
+      note: "Acompanha capa (bag).",
+    },
+    {
+      id: "guitarra-tagima",
+      name: "Guitarra Tagima T-635",
+      summary: "Estilo Strato · captação HSS · sunburst",
+      category: "instruments",
+      status: "available",
+      price: 1200,
+      photos: 5,
+      specs: [
+        "Corpo estilo Stratocaster, acabamento sunburst",
+        "Captação HSS: 2 single-coils + humbucker na ponte",
+        "Chave de 5 posições, 1 volume e 2 tonalidades",
+        "Ponte tremolo",
+        "Braço e escala em maple",
+      ],
+    },
+    {
+      id: "cadeira-dt3-rhino",
+      name: "Cadeira gamer DT3 Rhino",
+      summary: "Reclinável · braços 4D",
+      category: "furniture",
+      status: "available",
+      price: 1800,
+      newPrice: 2899.9,
+      photos: 5,
+      specs: [
+        "Encosto reclinável",
+        "Braços 4D",
+        "Estrutura de aço",
+        "Revestimento em couro sintético preto",
+      ],
+    },
+  ],
+};

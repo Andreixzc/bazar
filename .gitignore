@@ -1,0 +1,13 @@
+# Allowlist: only the website itself gets committed and published.
+# Everything else in this folder stays private: prices_and_specs.txt
+# (it has your floor prices) and the original photo folders.
+/*
+!/.gitignore
+!/.nojekyll
+!/README.md
+!/index.html
+!/styles.css
+!/app.js
+!/products.js
+!/img/
+.DS_Store
