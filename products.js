@@ -1,5 +1,5 @@
 /*
- * Bazar de Mudança: everything the site shows comes from this file.
+ * Bazar Andrei: everything the site shows comes from this file.
  *
  * To update the site, edit this file and push it, or edit it straight on GitHub
  * (works from the phone): https://github.com/Andreixzc/bazar/edit/main/products.js

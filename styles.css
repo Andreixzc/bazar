@@ -91,13 +91,6 @@ button {
   letter-spacing: -0.035em;
 }
 
-.lead {
-  max-width: 60ch;
-  margin: 18px 0 0;
-  color: var(--muted);
-  font-size: 1.1rem;
-}
-
 .hero-actions {
   display: flex;
   flex-wrap: wrap;

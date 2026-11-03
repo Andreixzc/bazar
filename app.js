@@ -1,4 +1,4 @@
-/* Bazar de Mudança: renders products.js into the page. No build step, no dependencies. */
+/* Bazar Andrei: renders products.js into the page. No build step, no dependencies. */
 (() => {
   "use strict";
 
@@ -85,7 +85,7 @@
     : forSale === products.length ? `${forSale} itens à venda`
     : `${forSale} de ${products.length} itens ainda à venda`;
 
-  const hello = wa("Olá! Vi o seu bazar de mudança e queria tirar uma dúvida.");
+  const hello = wa("Olá! Vi o seu bazar e queria tirar uma dúvida.");
   for (const id of ["cta", "fab", "foot-wa"]) document.getElementById(id).href = hello;
 
   const [y, m, d] = updated.split("-").map(Number);

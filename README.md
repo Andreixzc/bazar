@@ -1,6 +1,6 @@
-# Bazar de Mudança
+# Bazar Andrei
 
-Moving-sale catalogue: photos, prices, specs and a WhatsApp button per item.
+Sale catalogue: photos, prices, specs and a WhatsApp button per item.
 Live at **https://andreixzc.github.io/bazar/**
 
 ## Updating the site
