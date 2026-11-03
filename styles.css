@@ -82,17 +82,6 @@ button {
   padding-block: 44px 20px;
 }
 
-.eyebrow {
-  display: inline-block;
-  margin: 0 0 18px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: var(--chip);
-  color: var(--muted);
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
 .hero h1 {
   margin: 0;
   font-family: var(--display);
