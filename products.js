@@ -75,7 +75,7 @@ window.BAZAR = {
       status: "available",
       price: 3600,
       newPrice: 4839,
-      photos: 1,
+      photos: 5,
       focus: "50% 62%",
       specs: [
         "Tela de 48\" 4K UHD (3840 × 2160), OLED evo",
