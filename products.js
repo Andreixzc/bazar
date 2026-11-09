@@ -16,7 +16,7 @@
  */
 window.BAZAR = {
   whatsapp: "5531988781887",
-  updated: "2026-11-03",
+  updated: "2026-11-09",
 
   categories: {
     computers: "Computadores",
@@ -186,21 +186,6 @@ window.BAZAR = {
         "Gabinete de madeira com duto de graves",
         "Botão de volume na frente",
       ],
-    },
-    {
-      id: "violao-vogga",
-      name: "Violão Vogga Solene VCS230",
-      summary: "Cordas de aço · cutaway",
-      category: "instruments",
-      status: "available",
-      price: 300,
-      photos: 4,
-      specs: [
-        "Cordas de aço",
-        "Corpo com cutaway",
-        "Acabamento natural",
-      ],
-      note: "Acompanha capa (bag).",
     },
     {
       id: "guitarra-tagima",
